@@ -1,0 +1,23 @@
+{
+  "name": "Jest_Study",
+  "version": "1.0.0",
+  "description": "learn Jest",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://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@github.com/shj3497/Jest_Study.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shj3497/Jest_Study/issues"
+  },
+  "homepage": "https://github.com/shj3497/Jest_Study#readme",
+  "dependencies": {
+    "jest": "^27.4.7"
+  }
+}
