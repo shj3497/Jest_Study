@@ -22,10 +22,29 @@ describe("Calculator", () => {
     expect(cal.value).toBe(0);
   });
 
-  it("add", () => {
-    cal.add(1);
-    cal.add(2);
-    expect(cal.value).toBe(3);
+  describe("add", () => {
+    it("1 + 2 = 3 ", () => {
+      cal.add(1);
+      cal.add(2);
+      expect(cal.value).toBe(3);
+    });
+
+    it("value 100", () => {
+      cal.add(50);
+      cal.add(50);
+      expect(cal.value).toBe(100);
+    });
+
+    it("add should throw an error if value is greater than 100", () => {
+      // cal.add(50);
+      // cal.add(51);
+      // expect(cal.value).toThrowError() >> 에러남
+      //? 예상하는 에러값을 실행하는 것이기 때문에 expect()안에 콜백함수로 실행시킨다.
+      expect(() => {
+        cal.add(50);
+        cal.add(51);
+      }).toThrowError("Value can not be greater than 100");
+    });
   });
 
   it("subtract", () => {
